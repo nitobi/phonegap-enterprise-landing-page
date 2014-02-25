@@ -67,7 +67,28 @@ header a.home-link:before {
     border-radius:6px;
     letter-spacing:1px;
     display:inline-block;
-    margin:20px;
+    margin:20px 0 20px 0;
+}
+
+#features {
+    background:#27a1c5;
+    color:#fff;
+    padding:0 0 95px 0;
+}
+#features h2 {
+    margin:0;
+    text-transform:uppercase;
+    font-size:2.413em;
+    padding:70px;
+}
+
+#features h3 {
+    text-transform:uppercase;
+    font-size:1.357em;
+}
+
+#features p {
+    text-align:center;
 }
 
 footer {
