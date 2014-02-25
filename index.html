@@ -1,0 +1,133 @@
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<title>PhoneGap Enterprise</title>
+<link rel=stylesheet href=flexboxgrid-0.2.0/css/flexboxgrid.css media=screen>
+<script src=http://use.edgefonts.net/source-sans-pro.js></script>
+<style type=text/css>
+    * {
+        font-family: source-sans-pro, sans-serif;
+    }
+    header {
+        width:100%;
+        background:#fff;
+        padding:20px;
+    }
+    header a, header a:visited {
+        float:right;
+        margin-right:40px;
+        text-decoration:none;
+        color:#169fc7;
+        font-size:.85em;
+    }
+    footer {
+        background:#333;
+    }
+    h2, h3, h4 {
+        display:block;
+        text-align:center;
+    }
+    h4 {
+        color:#ccc;
+    }
+    #contact-form {
+        padding:20px;
+        border-radius:20px;
+        width:640px;
+        background:#ccc;
+        margin:0 auto 20px auto;
+    }
+    #contact-form:after {
+        content:" "; 
+        display:table; 
+        clear:both;
+    }
+
+    #contact-form:after {
+        clear:both;
+    }
+    label,
+    input,
+    textarea {
+        display:block;
+    }
+    input[type=text], textarea {
+        width:100%;
+        padding:10px;
+        border:1px inset;
+        border-radius:20px;
+        margin-bottom:20px;
+    }
+    input[type=submit] {
+        padding:20px;
+        background:blue;
+        border-radius:20px;
+        float:right;
+    }
+</style>
+</head>
+<body>
+  
+
+<header>
+    <img src="" alt=PhoneGap>
+    <a href=http://phonegap.com>Go to PhoneGap.com</a>
+</header>
+
+
+<div id=hero class="row around">
+    <img class=column-6--auto alt=PhoneGap:Enterprise>
+    <div class=column-6--auto >
+        <h1 id=heading>PhoneGap Enterprise</h1>
+        <p>Enterprise mobile application development and 
+        management across channels and platforms.</p>
+        <button>Get in touch</button>
+    </div>
+</div>
+
+<div id=features>
+    <h2>Enterprise Features</h2>
+    <div class="row">
+        <div class=column-4--hand>
+            <h3>Native, Hybrid &amp; Web on all platforms</h3>
+            <p>Power your mobile web, hybrid and native apps all from one powerful
+            platform. PhoneGap can even be embedded into existing native applications 
+            to leverage any existing investments.</p>
+        </div>
+        <div class=column-auto--hand>
+            <h3>Integrate cross channel marketing</h3>
+            <p>Need some good, concise - yet descriptive - content here that talks about
+            social, analytics, targetting content for marketing purposes.</p>
+        </div>
+        <div class=column-auto--hand>
+            <h3>Mobile application management</h3>
+            <p>Control access and distribution based on roles, function, testing, staging,
+            and production. Easily view and test your apps in different stages of
+            development.</p>
+        </div>
+        <div class=column-auto--hand>
+            <h3>Enterprise support &amp; training</h3>
+            <p>Professional support that matches the needs of your business, backed 
+            by a service level agreement.</p>
+        </div>
+    </div>
+</div>
+
+<div id=contact>
+    <h3>Want to know more?</h3>
+    <h4>We'd love to hear from you</h4>
+    <form id=contact-form>
+        <label for=contact-name>Name</label>
+        <input type=text name=contact[name] id=contact-name>
+        <label for=contact-email>Email</label>
+        <input type=text name=contact[email] id=contact-email>
+        <label for=contact-info>Is there anything else we need to know?</label>
+        <textarea name=contact[info] id=contact-info></textarea>
+        <input type=submit name=submit value="SEND MESSAGE">
+    </form>
+</div>
+
+
+<footer>&nbsp;</footer>
+</body>
+</html>
