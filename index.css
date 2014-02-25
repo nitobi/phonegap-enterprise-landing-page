@@ -74,6 +74,7 @@ header a.home-link:before {
     background:#27a1c5;
     color:#fff;
     padding:0 0 95px 0;
+    position:relative;
 }
 #features h2 {
     margin:0;
@@ -89,7 +90,10 @@ header a.home-link:before {
 
 #features p {
     text-align:center;
+    padding:25px;
 }
+
+
 
 footer {
     background:#333;
