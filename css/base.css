@@ -3,10 +3,14 @@ body {
     padding:0;
 }
 
-
 * {
     font-family: source-sans-pro, sans-serif;
 }
+
+*:focus {
+    outline: 0;
+}
+
 body {
     margin:0;
     padding:0;
@@ -44,20 +48,7 @@ header a.home-link:before {
     left: -10px;
 }
 
-#hero {
-    background:#2d3033;
-}
-
-#hero h1 {
-    font-size:3.571em;
-    color:#fff;
-}
-
-#hero p {
-    font-size:2.071em;
-    color:#d0d0d0;
-}
-#hero a {
+.joni-btn {
     font-size:1.429em;
     color:#fff;
     text-transform:uppercase;
@@ -68,33 +59,8 @@ header a.home-link:before {
     letter-spacing:1px;
     display:inline-block;
     margin:20px 0 20px 0;
+    text-shadow:0px 2px 0px #006889;
 }
-
-#features {
-    background:#27a1c5;
-    color:#fff;
-    padding:0 0 95px 0;
-    position:relative;
-}
-#features h2 {
-    margin:0;
-    text-transform:uppercase;
-    font-size:2.413em;
-    padding:70px;
-}
-
-#features h3 {
-    text-transform:uppercase;
-    font-size:1.357em;
-}
-
-#features p {
-    text-align:center;
-    padding:25px;
-}
-
-
-
 footer {
     background:#333;
 }
@@ -105,26 +71,11 @@ h2, h3, h4 {
 h4 {
     color:#ccc;
 }
-#contact-form {
-    padding:20px;
-    border-radius:20px;
-    width:640px;
-    background:#ccc;
-    margin:0 auto 20px auto;
-}
-#contact-form:after {
-    content:" "; 
-    display:table; 
-    clear:both;
-}
-
-#contact-form:after {
-    clear:both;
-}
 label,
 input,
 textarea {
     display:block;
+    resize: none;
 }
 input[type=text], textarea {
     width:100%;
@@ -134,8 +85,6 @@ input[type=text], textarea {
     margin-bottom:20px;
 }
 input[type=submit] {
-    padding:20px;
-    background:blue;
-    border-radius:20px;
     float:right;
+    border:none;
 }

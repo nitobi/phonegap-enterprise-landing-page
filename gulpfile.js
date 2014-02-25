@@ -6,7 +6,7 @@ var gulp = require('gulp')
 
 gulp.task('watch', function() {
     var server = livereload()
-    gulp.watch(['index.html', 'index.css']).on('change', function(file) {
+    gulp.watch(['index.html', 'css/**.*']).on('change', function(file) {
         server.changed(file.path)
     })
 })

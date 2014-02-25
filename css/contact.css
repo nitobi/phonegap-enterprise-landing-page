@@ -1,0 +1,37 @@
+
+#contact {
+    background:#eee;
+}
+#contact h3 {
+    padding-top:50px;
+}
+#contact h3, #contact h4 {
+    margin:0;
+    font-size:2.143em;
+    color:#111;
+}
+
+#contact h4 {
+    color:#ababab;
+    margin:0 0 30px;
+}
+#contact-form {
+    padding:40px;
+    border-radius:20px;
+    width:640px;
+    background:#e2e2e2;
+    margin:0 auto 20px auto;
+}
+#contact-form label {
+    color:#2d3033;
+    margin-left:10px;
+}
+#contact-form:after {
+    content:" "; 
+    display:table; 
+    clear:both;
+}
+
+#contact-form:after {
+    clear:both;
+}

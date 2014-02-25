@@ -2,8 +2,11 @@
 <head>
 <meta http-equiv="content-type" content="text/html; charset=utf-8">
 <title>PhoneGap Enterprise</title>
-<link rel=stylesheet href=flexboxgrid-0.2.0/css/flexboxgrid.css>
-<link rel=stylesheet href=index.css>
+<link rel=stylesheet href=css/flexboxgrid-0.2.0/css/flexboxgrid.css>
+<link rel=stylesheet href=css/base.css>
+<link rel=stylesheet href=css/hero.css>
+<link rel=stylesheet href=css/features.css>
+<link rel=stylesheet href=css/contact.css>
 <script src=http://use.edgefonts.net/source-sans-pro.js></script>
 </head>
 <body>
@@ -19,31 +22,31 @@
         <h1>PhoneGap Enterprise</h1>
         <p>Enterprise mobile application development and 
         management across channels and platforms.</p>
-        <a href=#contact>Get in touch</a>
+        <a href=#contact class=joni-btn>Get in touch</a>
     </div>
 </div>
 
 <div id=features>
     <h2>Enterprise-worthy Features</h2>
     <div class="row">
-        <div class=column-auto--hand>
+        <div class=column-3--hand>
             <h3>Native, Hybrid &amp; Web<br> on all platforms</h3>
             <p>Power your mobile web, hybrid and native apps all from one powerful
             platform. PhoneGap can even be embedded into existing native applications 
             to leverage any existing investments.</p>
         </div>
-        <div class=column-auto--hand>
+        <div class=column-3--hand>
             <h3>Integrate cross channel marketing</h3>
             <p>Need some good, concise - yet descriptive - content here that talks about
             social, analytics, targetting content for marketing purposes.</p>
         </div>
-        <div class=column-auto--hand>
+        <div class=column-3--hand>
             <h3>Mobile application management</h3>
             <p>Control access and distribution based on roles, function, testing, staging,
             and production. Easily view and test your apps in different stages of
             development.</p>
         </div>
-        <div class=column-auto--hand>
+        <div class=column-3--hand>
             <h3>Enterprise support &amp; training</h3>
             <p>Professional support that matches the needs of your business, backed 
             by a service level agreement.</p>
@@ -55,13 +58,13 @@
     <h3>Want to know more?</h3>
     <h4>We'd love to hear from you</h4>
     <form id=contact-form>
-        <label for=contact-name>Name</label>
-        <input type=text name=contact[name] id=contact-name>
-        <label for=contact-email>Email</label>
+        <label for=contact-name>What is your name? *</label>
+        <input type=text name=contact[name] id=contact-name placeholder="Your first and last name plus a company name if you think that helps.">
+        <label for=contact-email>Your email address *</label>
         <input type=text name=contact[email] id=contact-email>
         <label for=contact-info>Is there anything else we need to know?</label>
-        <textarea name=contact[info] id=contact-info></textarea>
-        <input type=submit name=submit value="SEND MESSAGE">
+        <textarea name=contact[info] id=contact-info rows=10></textarea>
+        <input class=joni-btn type=submit name=submit value="SEND MESSAGE">
     </form>
 </div>
 

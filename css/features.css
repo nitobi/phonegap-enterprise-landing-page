@@ -1,0 +1,23 @@
+
+#features {
+    background:#27a1c5;
+    color:#fff;
+    padding:0 0 95px 0;
+    position:relative;
+}
+#features h2 {
+    margin:0;
+    text-transform:uppercase;
+    font-size:2.413em;
+    padding:70px;
+}
+
+#features h3 {
+    text-transform:uppercase;
+    font-size:1.357em;
+}
+
+#features p {
+    text-align:center;
+    padding:25px;
+}
