@@ -19,7 +19,7 @@ body {
 header {
     width:100%;
     background:#fff;
-    background-image: url(images/bg_texture.jpg);
+    background-image: url(../images/bg_texture.jpg);
     padding:5px 20px 5px 20px;
 }
 header a.home-link, header a.home-link:visited {
@@ -54,12 +54,12 @@ header a.home-link:before {
     text-transform:uppercase;
     text-decoration:none;
     background:#27a1c5;
-    padding:30px;
+    padding:19px 25px 19px 25px;
     border-radius:6px;
     letter-spacing:1px;
     display:inline-block;
     margin:20px 0 20px 0;
-    text-shadow:0px 2px 0px #006889;
+    text-shadow:0px 1px 0px #006889;
 }
 footer {
     background:#333;
