@@ -75,7 +75,26 @@
     </form>
 </div>
 
+<div id=submission-sent style=display:none>
+    Thanks
+</div>
+
 
 <footer>&nbsp;</footer>
+<script>
+!function() {
+
+    var frm = document.getElementById('contact-form')
+      , thx = document.getElementById('submission-sent') 
+
+    frm.onsubmit = function(e) {
+        frm.style.display = 'none'
+        thx.style.display = 'block'
+        e.preventDefault()
+        return false
+    }
+
+}()
+</script>
 </body>
 </html>
