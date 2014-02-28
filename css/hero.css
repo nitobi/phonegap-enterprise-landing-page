@@ -1,14 +1,14 @@
 
 #hero {
     background:#2d3033;
-    padding: 50px 40px 0px 20px;
+    padding-top: 50px;
 }
 
 #hero h1 {
     font-size:3.571em;
     color:#fff;
     line-height: 0.9em;
-    font-weight: 600;
+    font-weight: lighter;
 }
 
 #hero p {
@@ -22,4 +22,5 @@
   display: block;
   margin-left: auto;
   margin-right: auto;
+  padding-left: 20px;
 }

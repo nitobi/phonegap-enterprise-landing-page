@@ -1,8 +1,10 @@
-
 #contact {
-    background:#eee url(../images/triangle.svg) repeat-x top center;
-    background-size: 32px 12px;
+    background: linear-gradient(-45deg, transparent 75%, #27a1c5 75%) 0 50%, linear-gradient( 45deg, transparent 75%, #27a1c5 75%) 0 50%;
+    background-repeat: repeat-x;
+    background-size: 25px 25px, 25px 25px;
+    background-position: left top;
 }
+
 #contact h3 {
     padding-top:50px;
 }
@@ -21,7 +23,7 @@
 #contact-form {
     padding:40px;
     border-radius:20px;
-    width:640px;
+    width:50%;
     background:#e2e2e2;
     margin:0 auto 20px auto;
 }
