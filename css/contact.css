@@ -1,6 +1,7 @@
 
 #contact {
-    background:#eee;
+    background:#eee url(../images/triangle.svg) repeat-x top center;
+    background-size: 32px 12px;
 }
 #contact h3 {
     padding-top:50px;
@@ -9,11 +10,13 @@
     margin:0;
     font-size:2.143em;
     color:#111;
+    font-weight: 100;
 }
 
 #contact h4 {
     color:#ababab;
     margin:0 0 30px;
+    font-weight: 100;
 }
 #contact-form {
     padding:40px;
