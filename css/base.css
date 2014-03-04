@@ -3,6 +3,7 @@ body {
     padding:0;
 }
 * {
+    box-sizing: border-box;
     font-family: adobe-clean, HelveticaNeue-Light, Helvetica, Arial, sans-serif;
 }
 *:focus {
@@ -14,18 +15,17 @@ body {
     font-size:14px;
 }
 header {
-    width:100%;
     height: 40px;
     background:#fff;
     background-image: url(../images/bg_texture.jpg);
+    background-repeat: repeat-x;
     padding-left: 25px;
 }
 img.header {
   padding-top: 5px;
 }
 header a.home-link, header a.home-link:visited {
-    float:right;
-    margin-right:40px;
+    margin-right:20px;
     text-decoration:none;
     color:#169fc7;
     font-size:.85em;
@@ -103,10 +103,16 @@ input[type=submit] {
     margin:20px 0 20px 0;
     text-shadow:0px 1px 0px #006889;
     cursor: hand;
+    -webkit-transition: background-color,.35s;
+    transition: background-color,.35s;
 }
 .joni-btn:hover {
     text-transform:uppercase;
     text-decoration:none;
     background:#ee3551;
     text-shadow:none;
+}
+
+.copyright {
+    margin-left:50px;
 }
