@@ -17,42 +17,63 @@
 </header>
 
 
-<div id="hero" class="row">
-    <div class=column-6--hand>
+<div id="hero" class="row around">
+    <div class="column-1--hand
+                column-6--lap
+                column-6--desk
+                column-6--wall">
         <img src="images/hero.svg" class="hero" alt=PhoneGap Enterprise>
     </div>
-    <div class=column-6--hand>
+    <div class="column-12--hand
+                column-6--lap
+                column-6--desk
+                column-6--wall">
         <h1>PhoneGap Enterprise</h1>
         <p>Enterprise mobile application</br>  
         development and management </br>
         across channels and platforms.</p>
-        <a href=#contact class=joni-btn>Get in touch</a>
+        <a href=#contact class="joni-btn">Get in touch</a>
     </div>
 </div>
 
 <div id="features" class="row">
-    <h2 class="column-12--hand">Enterprise-worthy Features</h2>
-        <div class="column-3--hand">
+    <h2 class="column-12--hand
+               column-12--lap
+               column-12--desk
+               column-12--wall">Enterprise-worthy Features</h2>
+        <div class="column-12--hand
+                    column-6--lap
+                    column-3--desk
+                    column-3--wall">
             <img src="images/feature1.svg" class="center" alt=Mobile First>
             <h3>Native, Hybrid &amp; Web</br> on all platforms</h3>
             <p>Power your mobile web, hybrid and native apps all from one powerful
             platform. PhoneGap can even be embedded into existing native applications 
             to leverage any existing investments.</p>
         </div>
-        <div class="column-3--hand">
+        <div class="column-12--hand
+                    column-6--lap
+                    column-3--desk
+                    column-3--wall">
             <img src="images/feature2.svg" class="center" alt=Cross Channel Marketing Integration>
             <h3>Integrate cross</br> channel marketing</h3>
             <p>Need some good, concise - yet descriptive - content here that talks about
             social, analytics, targetting content for marketing purposes.</p>
         </div>
-        <div class="column-3--hand">
+        <div class="column-12--hand
+                    column-6--lap
+                    column-3--desk
+                    column-3--wall">
             <img src="images/feature3.svg" class="center" alt=Application Management>
             <h3>Mobile application </br> management</h3>
             <p>Control access and distribution based on roles, function, testing, staging,
             and production. Easily view and test your apps in different stages of
             development.</p>
         </div>
-        <div class="column-3--hand">
+        <div class="column-12--hand
+                    column-6--lap
+                    column-3--desk
+                    column-3--wall">
             <img src="images/feature4.svg" class="center" alt=Enterprise Support & Training>
             <h3>Enterprise support </br> &amp; training</h3>
             <p>Professional support that matches the needs of your business, backed 
@@ -60,16 +81,34 @@
         </div>
 </div>
 
-<div id="contact" class="row">
-    <h3 class="column-12--hand">Want to know more?</h3>
-    <h4 class="column-12--hand">We&rsquo;d love to hear from you</h4>
-    <form id="contact-form" class="column-7--hand">
-        <label for=contact-name>What is your name? *</label>
-        <input type=text name=contact[name] id=contact-name placeholder="Your first and last name, plus a company name if you think that helps.">
+<div id="contact" class="row center">
+    <h3 class="column-12--hand
+               column-12--lap
+               column-12--desk
+               column-12--wall">Want to know more?</h3>
+    <h4 class="column-10--hand
+               column-9--lap
+               column-7--desk
+               column-7--wall">We're getting ready to release a beta of new enterprise features of PhoneGap, if you want to know more we&rsquo;d love to hear from you.</h4>
+    <form id="contact-form" class="column-10--hand
+                                   column-9--lap
+                                   column-7--desk
+                                   column-7--wall">
+        <label for=contact-name>Name *</label>
+        <input type=text name=contact[name] id=contact-name placeholder="First and last name, please.">
+
+        <label for=contact-title>Job title *</label>
+        <input type=text name=contact[title] id=contact-title>
+
+        <label for=contact-company>Company *</label>
+        <input type=text name=contact[company] id=contact-company>
+
         <label for=contact-email>Your email address *</label>
         <input type=email name=contact[email] id=contact-email>
+
         <label for=contact-info>Is there anything else we need to know?</label>
         <textarea name=contact[info] id=contact-info rows=10></textarea>
+
         <input class=joni-btn type=submit name=submit value="SEND MESSAGE">
     </form>
 </div>
@@ -77,7 +116,6 @@
 <div id="submission-sent" style=display:none>
     Thanks
 </div>
-
 
 <footer>
     <div class="row">
