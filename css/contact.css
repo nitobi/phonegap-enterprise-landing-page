@@ -14,7 +14,7 @@
     line-height: 4.0rem;
 }
 
-/**** Setting h2 font to resize with viewport ****/
+/**** Setting h3 font to resize with viewport ****/
 
  
 @media screen and (max-width: 55em) {
@@ -23,7 +23,7 @@
     }
 }
 
-/* Font resetting for h2 done */
+/* Font resetting for h3 done */
 
 #contact h4 {
     
@@ -49,7 +49,7 @@
     }
 }
 
-/* Font resetting for h2 done */
+/* Padding reset done */
 
 #contact-form label {
     color:#2d3033;
@@ -60,7 +60,6 @@
     display:table; 
     clear:both;
 }
-
 #contact-form:after {
     clear:both;
 }

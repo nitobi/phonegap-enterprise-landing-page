@@ -6,7 +6,7 @@
 
 /**** Setting padding to resize with viewport ****/
 
-@media screen and (max-width: 62em) {
+@media screen and (max-width: 48em) {
     #hero {
         padding-top: 30px;
         padding-bottom: 30px
@@ -84,3 +84,5 @@
         display:none;
     }
 }
+
+/* Image reset done */
