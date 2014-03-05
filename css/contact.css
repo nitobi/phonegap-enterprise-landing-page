@@ -7,26 +7,50 @@
 
 #contact h3 {
     padding-top:50px;
-}
-#contact h3, #contact h4 {
-    margin:0;
+    margin: 0;
     font-size:2.143em;
     color:#111;
     font-weight: 100;
+    line-height: 4.0rem;
 }
 
+/**** Setting h3 font to resize with viewport ****/
+
+ 
+@media screen and (max-width: 55em) {
+    #contact h3  {
+        font-size:1.5rem;
+    }
+}
+
+/* Font resetting for h3 done */
+
 #contact h4 {
+    
+    font-size: 1.2rem;
     color:#ababab;
     margin:0 0 30px;
     font-weight: 100;
+    line-height: 1.4rem;
 }
 #contact-form {
     padding:40px;
-    border-radius:20px;
-    xwidth:50%;
+    border-radius:15px;
     background:#e2e2e2;
     margin:0 auto 20px auto;
 }
+
+/**** Setting from padding to resize with viewport ****/
+
+ 
+@media screen and (max-width: 55em) {
+    #contact-form  {
+        padding: 20px;
+    }
+}
+
+/* Padding reset done */
+
 #contact-form label {
     color:#2d3033;
     margin-left:10px;
@@ -36,7 +60,6 @@
     display:table; 
     clear:both;
 }
-
 #contact-form:after {
     clear:both;
 }
