@@ -90,7 +90,7 @@ input[type=submit] {
     float:right;
     border:none;
 }
-.joni-btn {
+.main-btn, .tricky-btn, .submit-btn {
     font-size:1.25rem;
     color:#fff;
     text-transform:uppercase;
@@ -105,37 +105,37 @@ input[type=submit] {
     cursor: hand;
     -webkit-transition: background-color,.35s;
     transition: background-color,.35s;
+    -webkit-appearance: none;
 }
-.joni-btn:hover {
+.main-btn:hover, .tricky-btn:hover, .submit-btn:hover {
     text-transform:uppercase;
     text-decoration:none;
     background:#ee3551;
     text-shadow:none;
 }
 
-/**** Setting .joni-btn font to resize with viewport ****/
+/**** Setting .main-btn and .submit-btn font to resize with viewport ****/
 
 @media screen and (max-width: 62em) {
-    .joni-btn {
+    .main-btn, .submit-btn {
         font-size:1rem;
     }
 }
- 
+
 @media screen and (max-width: 55em) {
-    .joni-btn {
+    .main-btn, .submit-btn {
         font-size:0.9rem;
         padding:18px 22px 18px 22px;
     }
 }
  
 @media screen and (max-width: 48em) {
-    .joni-btn {
-        margin-left: auto;
-        margin-right: auto;
+    .main-btn {
+        display:none;
     }
 }
 
-/* Font resetting for .joni-btn done */
+/* Font resetting for buttons done */
 
 .copyright {
     margin-left:50px;
