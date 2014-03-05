@@ -26,13 +26,21 @@
 /* Font resetting for h3 done */
 
 #contact h4 {
-    
     font-size: 1.2rem;
     color:#ababab;
     margin:0 0 30px;
     font-weight: 100;
     line-height: 1.4rem;
 }
+
+#contact h5 {
+    font-size: 1.4rem;
+    color:#fff;
+    font-weight: 400;
+    line-height: 1.6rem;
+    text-align: center;
+}
+
 #contact-form {
     padding:40px;
     border-radius:15px;
@@ -62,4 +70,18 @@
 }
 #contact-form:after {
     clear:both;
+}
+
+#submission-sent {
+    padding:30px;
+    border-radius:15px;
+    background:#95D127;
+    margin:0 auto 20px auto;
+}
+
+#submission-sent img.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 150px;
 }
