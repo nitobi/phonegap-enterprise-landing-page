@@ -86,3 +86,17 @@
 }
 
 /* Image reset done */
+
+#tricky {
+    xdisplay: none;
+}
+
+/**** Setting tricky to appear with small ****/
+
+@media screen and (max-width: 48em) {
+    #tricky {
+        display: ;
+    }
+}
+
+/* Image reset done */

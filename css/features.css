@@ -12,6 +12,20 @@
     padding-top:80px;
 }
 
+#tricky {
+    display:none;
+}
+
+/**** Setting tricky (button) to appear with viewport ****/
+
+@media screen and (max-width: 48em) {
+    #tricky {
+        display:inline;
+    }
+}
+
+/* Dirty hide show done */
+
 /**** Setting h2 font to resize with viewport ****/
 
  
