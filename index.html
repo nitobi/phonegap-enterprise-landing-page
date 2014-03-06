@@ -99,23 +99,23 @@
     <form id="contact-form" class="column-10--hand
                                    column-9--lap
                                    column-7--desk
-                                   column-7--wall">
+                                   column-7--wall" autocomplete="on">
         <label for=contact-name>Name *</label>
-        <input type=text name=contact[name] id=contact-name placeholder="First and last name, please.">
+        <input type=text name=contact[name] id="contact-name" placeholder="First and last name, please." required  pattern="[A-Za-z-0-9]+\s[A-Za-z-'0-9]+" title="Firstname Lastname" aria-required="true" aria-describedby="name-format">
 
         <label for=contact-title>Job title *</label>
-        <input type=text name=contact[title] id=contact-title>
+        <input type=text name=contact[title] id="contact-title" required aria-required="true">
 
         <label for=contact-company>Company *</label>
-        <input type=text name=contact[company] id=contact-company>
+        <input type=text name=contact[company] id="contact-company" required aria-required="true">
 
         <label for=contact-email>Email address *</label>
-        <input type=email name=contact[email] id=contact-email>
+        <input type=email name=contact[email] id="contact-email" required aria-required="true">
 
         <label for=contact-info>Is there anything else we need to know?</label>
         <textarea name=contact[info] id=contact-info rows=10></textarea>
 
-        <input class=submit-btn type=submit name=submit value="SEND MESSAGE">
+        <input class="submit-btn" type=submit name=submit value="SEND MESSAGE">
     </form>
 
     <div id="submission-sent" class="column-10--hand

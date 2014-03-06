@@ -65,6 +65,9 @@ textarea {
     display:block;
     resize: none;
 }
+label {
+    padding-bottom: 0.4rem;
+}
 input[type=text], input[type=email], textarea {
     width:100%;
     padding:12px;
