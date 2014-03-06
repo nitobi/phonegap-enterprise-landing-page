@@ -35,7 +35,6 @@ header a.home-link, header a.home-link:visited {
 header a.home-link:hover {
     text-decoration: underline;
 }
-
 header a.home-link:before {
     content: ' ';
     height: 0;
@@ -47,19 +46,6 @@ header a.home-link:before {
 
     top: 39%;
     left: -10px;
-}
-footer {
-    background:#333;
-    color:#fff;
-    font-size: 0.625rem;
-    font-weight: 100;
-    padding: 25px 0 0 25px;
-}
-footer a{
-    color:#fff;
-}
-footer a:hover {
-    color:#169fc7;
 }
 h2, h3, h4 {
     display:block;
@@ -136,7 +122,32 @@ input[type=submit] {
 }
 
 /* Font resetting for buttons done */
+footer {
+    background:#333;
+    color:#fff;
+    font-size: 0.625rem;
+    font-weight: 100;
+    padding-top: 25px;
+}
+footer a{
+    color:#fff;
+}
+footer a:hover {
+    color:#169fc7;
+}
+.left, .right {
+    display:inline;
+    float:left;
+}
+.wrapper {
+    overflow:auto;
+    display:block;
+    padding-left: 40px;
+    width: 350px;
+    word-wrap: normal;
+}
 
 .copyright {
-    margin-left:50px;
+    padding-left: 10px;
 }
+
