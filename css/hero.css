@@ -16,7 +16,7 @@
 /* Padding reset done */
 
 #hero h1 {
-    font-size:2.5rem;
+    font-size:2.3rem;
     color:#fff;
     line-height: 0.9em;
     font-weight: 600;
@@ -26,13 +26,13 @@
 
 @media screen and (max-width: 62em) {
     #hero h1 {
-        font-size:2.3rem;
+        font-size:2.2rem;
     }
 }
  
-@media screen and (max-width: 55em) {
+@media screen and (max-width: 57em) {
     #hero h1 {
-        font-size:2.1rem;
+        font-size:1.9rem;
     }
 }
  
@@ -45,7 +45,7 @@
 /* Font resetting for h1 done */
 
 #hero p {
-    font-size:1.8125rem;
+    font-size:1.7125rem;
     color:#d0d0d0;
     line-height: 1.23em;
     font-weight: 100;
@@ -55,13 +55,13 @@
 
 @media screen and (max-width: 62em) {
     #hero p {
-        font-size:1.6rem;
+        font-size:1.5rem;
     }
 }
  
-@media screen and (max-width: 55em) {
+@media screen and (max-width: 57em) {
     #hero p {
-        font-size:1.4rem;
+        font-size:1.2rem;
     }
 }
  

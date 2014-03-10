@@ -25,7 +25,7 @@ img.header {
   padding-top: 5px;
 }
 header a.home-link, header a.home-link:visited {
-    margin-right:20px;
+    margin-right:80px;
     text-decoration:none;
     color:#169fc7;
     font-size:0.75rem;
@@ -47,6 +47,24 @@ header a.home-link:before {
     top: 39%;
     left: -10px;
 }
+a#adobe-flag {
+content: '';
+position: absolute;
+top: 0;
+right: 0;
+width: 38px;
+height: 63px;
+border: none;
+margin: 0 20px 0 0;
+padding: 0;
+float: none;
+font-size: 1px;
+color: transparent;
+background: url(../images/Adobe.svg) top right no-repeat;
+-webkit-box-shadow: 0 1px 1px rgba(0,0,0,0.35);
+box-shadow: 0 1px 1px rgba(0,0,0,0.35);
+}
+
 h2, h3, h4 {
     display:block;
     text-align:center;
@@ -89,7 +107,7 @@ input[type=submit] {
     border-radius:6px;
     letter-spacing:1px;
     display:inline-block;
-    margin:20px 0 20px 0;
+    margin:12px 0 20px 0;
     text-shadow:0px 1px 0px #006889;
     cursor: hand;
     -webkit-transition: background-color,.35s;
