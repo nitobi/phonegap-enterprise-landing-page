@@ -167,6 +167,17 @@ footer a:hover {
     width: 350px;
 }
 
+/**** Setting .wrapper for smallest viewport ****/
+
+ 
+@media screen and (max-width: 48em) {
+    .wrapper {
+        padding-left: 20px;
+    }
+}
+
+/* Font resetting for buttons done */
+
 .copyright {
     padding-left: 10px;
 }
