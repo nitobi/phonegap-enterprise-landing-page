@@ -4,7 +4,7 @@ body {
 }
 * {
     box-sizing: border-box;
-    font-family: adobe-clean, HelveticaNeue-Light, Helvetica, Arial, sans-serif;
+    font-family: "adobe-clean", HelveticaNeue-Light, Helvetica, Arial, sans-serif;
 }
 *:focus {
     outline: 0;
