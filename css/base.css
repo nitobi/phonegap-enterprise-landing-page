@@ -23,6 +23,7 @@ header {
 }
 img.header {
   padding-top: 5px;
+  border: 0;
 }
 header a.home-link, header a.home-link:visited {
     margin-right:80px;
