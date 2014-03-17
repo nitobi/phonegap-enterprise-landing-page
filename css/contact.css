@@ -3,6 +3,7 @@
     background-repeat: repeat-x;
     background-size: 25px 25px, 25px 25px;
     background-position: left top;
+    background-color: #eeeeee;
 }
 
 #contact h3 {
@@ -27,11 +28,23 @@
 
 #contact h4 {
     font-size: 1.2rem;
-    color:#ababab;
+    color:#828282;
     margin:0 0 30px;
     font-weight: 100;
     line-height: 1.4rem;
+    padding: 0 20px 0 20px;
 }
+
+/**** Setting h4 font to resize with viewport ****/
+
+ 
+@media screen and (max-width: 55em) {
+    #contact h4  {
+        font-size:1.15rem;
+    }
+}
+
+/* Font resetting for h4 done */
 
 #contact h5 {
     font-size: 1.4rem;

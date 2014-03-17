@@ -87,17 +87,16 @@
 }
 
 /* Image reset done */
-
 #tricky {
-    xdisplay: none;
+    display:none;
 }
 
-/**** Setting tricky to appear with small ****/
+/**** Setting tricky (button) to appear with viewport ****/
 
 @media screen and (max-width: 48em) {
     #tricky {
-        display: ;
+        display:inline;
     }
 }
 
-/* Image reset done */
+/* Dirty hide show done */
