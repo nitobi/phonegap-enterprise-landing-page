@@ -102,6 +102,7 @@ input[type=submit] {
 }
 .main-btn, .tricky-btn, .submit-btn {
     font-size:1.25rem;
+    font-weight: 400;
     color:#fff;
     text-transform:uppercase;
     text-decoration:none;
@@ -128,13 +129,13 @@ input[type=submit] {
 
 @media screen and (max-width: 62em) {
     .main-btn, .submit-btn {
-        font-size:1rem;
+        font-size:1.0rem;
     }
 }
 
 @media screen and (max-width: 55em) {
     .main-btn, .submit-btn {
-        font-size:0.9rem;
+        font-size:1.0rem;
         padding:18px 22px 18px 22px;
     }
 }
