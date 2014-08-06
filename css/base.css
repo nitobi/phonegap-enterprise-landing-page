@@ -80,14 +80,19 @@ h4 {
 }
 label,
 input,
-textarea {
+textarea,
+select {
     display:block;
     resize: none;
+}
+select {
+    background:#fff;
+    height:40px;
 }
 label {
     padding-bottom: 0.4rem;
 }
-input[type=text], input[type=email], textarea {
+input[type=text], input[type=email], textarea, select {
     width:100%;
     padding:12px;
     border:0px;

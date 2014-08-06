@@ -9,6 +9,7 @@
 <script src="//assets.adobedtm.com/659ec8ada5450db95675e43beaaae92399591a11/satelliteLib-d6f79f42e6a413a42094a79ac480aea348f592ac.js"></script>
 <script type="text/javascript" src="//use.typekit.net/exp7awb.js"></script>
 <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+<script type="text/javascript" src="js/geo.js"></script>
 <link rel=stylesheet href=css/flexboxgrid.min.css>
 <link rel=stylesheet href=css/base.css>
 <link rel=stylesheet href=css/hero.css>
@@ -106,18 +107,36 @@
                                        column-9--lap
                                        column-7--desk
                                        column-7--wall" autocomplete="on">
-            <label for=contact-name>Name *</label>
-            <input type=text name=contact[name] id="contact-name" placeholder="First and last name, please." required  pattern="[A-Za-z-0-9]+\s[A-Za-z-'0-9]+" title="Firstname Lastname" aria-required="true" aria-describedby="name-format">
+            <label for=contact-firstname>First Name *</label>
+            <input type=text name=contact[firstname] id="contact-firstname" required title="Firstname" aria-required="true">
 
+            <label for=contact-lastname>Last Name *</label>
+            <input type=text name=contact[lastname] id="contact-lastname" required title="Lastname" aria-required="true">
+            
             <label for=contact-title>Job title *</label>
             <input type=text name=contact[title] id="contact-title" required aria-required="true">
 
             <label for=contact-company>Company *</label>
             <input type=text name=contact[company] id="contact-company" required aria-required="true">
 
-            <label for=contact-email>Email address *</label>
+            <label for=contact-country>Country *</label>
+            <select id="contact-country" name ="contact[country]"></select>
+            
+            <label for=contact-state>State / Province *</label>
+            <select name="contact[state]" id ="contact-state"></select>
+            <script language="javascript">
+                populateCountries("contact-country", "contact-state");
+            </script>
+
+            <label for=contact-zip>Zip / Postal code *</label>
+            <input type="text" name=contact[zip] id="contact-zip" required aria-required="true">
+            
+            <label for=contact-email>Email Address *</label>
             <input type=email name=contact[email] id="contact-email" required aria-required="true">
 
+            <label for=contact-phone>Phone Number *</label>
+            <input type="text" name=contact[phone] id="contact-phone" required aria-required="true">
+            
             <label for=contact-info>Is there anything else we need to know?</label>
             <textarea name=contact[info] id="contact-info" rows=10></textarea>
 
@@ -154,21 +173,31 @@
 document.getElementById('contact-form').onsubmit = function submitForm(e) {
     
     var valueFrom = function valueFrom(id) { return document.getElementById(id).value } 
-      , name      = valueFrom('contact-name') 
-      , title     = valueFrom('contact-title') 
-      , company   = valueFrom('contact-company') 
-      , email     = valueFrom('contact-email') 
-      , info      = valueFrom('contact-info') 
-      , http      = new XMLHttpRequest
-      , url       = 'https://docs.google.com/forms/d/1oUtCLndtgiLSo-RRQZajDbaTomhmJLHsts9MTZWzdNw/formResponse'
-      , params    = ''
+    , firstname = valueFrom('contact-firstname')
+    , lastname  = valueFrom('contact-lastname')
+    , title     = valueFrom('contact-title')
+    , company   = valueFrom('contact-company') 
+    , country   = valueFrom('contact-country')
+    , state     = valueFrom('contact-state') 
+    , zip       = valueFrom('contact-zip')
+    , email     = valueFrom('contact-email') 
+    , phone     = valueFrom('contact-phone')
+    , info      = valueFrom('contact-info')
+    , http      = new XMLHttpRequest
+    , url       = 'https://docs.google.com/forms/d/1ENaHnOTVd_x70mSq6dvzmQf6hNUfVLHBc9N0NQNBeBw/formResponse'
+    , params    = ''
 
-    params += 'entry.1692000714=' + name    + '&'
-    params += 'entry.1376347664=' + title   + '&'
-    params += 'entry.1182607278=' + company + '&'
-    params += 'entry.489449410='  + email   + '&'
-    params += 'entry.1852271341=' + info    + '&'
-
+    params += 'entry.1692000714=' + firstname   + '&'
+    params += 'entry.372125811='  + lastname    + '&'
+    params += 'entry.1376347664=' + title       + '&'
+    params += 'entry.1182607278=' + company     + '&'
+    params += 'entry.343488187='  + country     + '&'
+    params += 'entry.150480934='  + state       + '&'
+    params += 'entry.1279279590=' + zip         + '&'
+    params += 'entry.489449410='  + email       + '&'
+    params += 'entry.1252320088=' + phone       + '&'
+    params += 'entry.1852271341=' + info        + '&'
+    
     // validate
     // send the data 
     http.open('POST', url, true)
@@ -183,6 +212,7 @@ document.getElementById('contact-form').onsubmit = function submitForm(e) {
 
     http.send(params)
     e.preventDefault()
+
     return false
 }
 </script>
